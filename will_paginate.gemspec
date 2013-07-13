@@ -3,7 +3,7 @@ require 'rbconfig'
 require File.expand_path('../lib/will_paginate/version', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name    = 'will_paginate'
+  s.name    = 'will_paginate-myboka'
   s.version = WillPaginate::VERSION::STRING
   
   s.summary = "Pagination plugin for web frameworks and other apps"

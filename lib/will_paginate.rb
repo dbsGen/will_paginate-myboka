@@ -1,5 +1,5 @@
 # You will paginate!
-module WillPaginate
+module WillPaginateMyboka
 end
 
 if defined?(Rails::Railtie)

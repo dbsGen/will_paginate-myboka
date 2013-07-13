@@ -9,7 +9,7 @@ module WillPaginate
         @current_page = WillPaginate::PageNumber(options[:page] || @current_page || 1)
         @page_multiplier = current_page - 1
         pp = (options[:per_page] || per_page || WillPaginate.per_page).to_i
-        limit(pp).skip(@page_multiplier * pp)
+        (options[:sort].nil? ? self : order_by(options[:sort])).limit(pp).skip(@page_multiplier * pp)
       end
 
       def per_page(value = :non_given)
